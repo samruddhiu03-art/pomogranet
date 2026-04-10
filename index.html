@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomogranet World</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2') no-repeat center center/cover;
+            color: white;
+        }
+
+        header {
+            background: rgba(139, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        nav {
+            background: rgba(0,0,0,0.7);
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        section {
+            padding: 40px;
+            background: rgba(0,0,0,0.6);
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 250px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(139, 0, 0, 0.8);
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: crimson;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: darkred;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🍎 Pomogranet World</h1>
+    <p>Fresh • Healthy • Delicious</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#benefits">Benefits</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Pomegranate</h2>
+    <p>
+        Pomegranate is one of the healthiest fruits on Earth. It is packed with nutrients,
+        antioxidants, and powerful plant compounds that can benefit your body in many ways.
+    </p>
+
+    <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5"
+         width="100%" style="border-radius:10px;">
+</section>
+
+<section id="benefits">
+    <h2>Health Benefits</h2>
+    <ul>
+        <li>Rich in antioxidants</li>
+        <li>Boosts immunity</li>
+        <li>Improves heart health</li>
+        <li>Helps digestion</li>
+        <li>Anti-inflammatory properties</li>
+    </ul>
+
+    <button onclick="showMessage()">Click for Tip</button>
+</section>
+
+<section id="gallery">
+    <h2>Gallery</h2>
+
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1603048719539-9ecb6c9fd5b5">
+        <img src="https://images.unsplash.com/photo-1592928302636-c83cf1b3f3bb">
+        <img src="https://images.unsplash.com/photo-1576402187878-974f70c890a5">
+        <img src="https://images.unsplash.com/photo-1604908176997-4310f6f7e3bb">
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <form>
+        <label>Name:</label><br>
+        <input type="text" placeholder="Samruddhi Ubale"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" placeholder="samruddhiu03@gmail.com"><br><br>
+
+        <label>Message:</label><br>
+        <textarea rows="5" cols="40"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Pomogranet World | All Rights Reserved</p>
+</footer>
+
+<script>
+    function showMessage() {
+        alert("Tip: Drink fresh pomegranate juice daily for better health!");
+    }
+</script>
+
+</body>
+</html>
